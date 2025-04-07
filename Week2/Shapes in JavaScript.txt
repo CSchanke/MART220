@@ -1,0 +1,38 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  //Drawing a burger
+  //Define colors
+  let a = color("tan");
+  let b = color("brown");
+  let c = color("green");
+  let d = color("red");
+  let e = color("yellow");
+  //Lower bun
+  fill(a);
+  rect(50,300,300,75);
+  //stack other shapes on top of an ellipse to create
+  //semi-circle shape for top bun
+  ellipse(200,200,300,150);
+  //Now meat
+  fill(b);
+  rect(25,250,350,50);
+  //Cheese
+  fill(e);
+  rect(25,230,350,20);
+  //lettuce
+  fill(c);
+  rect(50,215,300,15);
+  //Tomato
+  fill(d);
+  rect(45,185,310,30)
+  //and now a small flag on top because this is mostly made of rectangles
+  //and I want to assure you that I can also use other shapes
+  fill(b);
+  rect(200,50,5,100);
+  fill(e);
+  triangle(205,50,250,75,205,100);
+}

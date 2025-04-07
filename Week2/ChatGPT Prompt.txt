@@ -1,0 +1,13 @@
+I asked ChatGPT to generate an image of a cheeseburger. The image is saved in the same folder as this text file.
+
+The first thiing that struck me about using ChatGPT to create the image (note: this was my first time ever using ChatGPT) was how long it took. I spent maybe half-an-hour fiddling with
+the shapes and colors to make my burger picture, and ChatGPT took around 4 or 5 minutes. Most AI image-creatiooon tools I've used tend to be a lot faster, but, then, they probably don't
+ deal with the same volume as ChatGPT. As for the composition itself, our burgers were remarkably similar. There were really only 3 differences:
+1. ChatGPT put pickles on the bottom bun. I don't like pickles, and, therefore, omitted them from my drawing.
+2. ChatGPT used two patties of meat and two slices of cheese, whereas I opted for the simpler single patty option.
+3. ChatGPT put the lettuce oon top of the tomato, I depicted it vice-versa.
+4. ChatGPT included sesame seeds, which I was tempted to do, but, frankly, the amount of finicking that would require just wasn't worth it.
+Of course, ChatGPT's image is much more visually appealing, but it's not exactly a fair comparison, considering that I am constrained by p5.js, and even then, I never was a great
+viisual artist. That being said, it does seem to me that there are holes to be poked in ChatGPT's work. The huge amount of blur applied to the background and edges of the image probably
+go a long way toward hiding mishaps, and there's something about the lettuce that bothers me. Specifically, looking through the open spaces in the lettuce just results in my brain being
+confused, rather than seeing what it expects to see. However, it is quite impressive.
