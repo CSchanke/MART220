@@ -1,0 +1,36 @@
+function setup() {
+  createCanvas(800, 600);
+  background(255); // White background
+  noLoop(); // Draw once
+}
+
+function draw() {
+  for (let i = 0; i < 50; i++) {
+    let shapeType = int(random(3)); // 0: circle, 1: rectangle, 2: triangle
+    let r = random(255);
+    let g = random(255);
+    let b = random(255);
+    fill(r, g, b, 150); // Random color with some transparency
+    stroke(0); // Black stroke
+    strokeWeight(2);
+
+    let x = random(width);
+    let y = random(height);
+    let size = random(20, 100);
+
+    if (shapeType === 0) {
+      ellipse(x, y, size, size); // Circle
+    } else if (shapeType === 1) {
+      rect(x, y, size, size); // Square
+    } else if (shapeType === 2) {
+      // Triangle with random vertices
+      let x1 = x;
+      let y1 = y;
+      let x2 = x + random(-size, size);
+      let y2 = y + random(-size, size);
+      let x3 = x + random(-size, size);
+      let y3 = y + random(-size, size);
+      triangle(x1, y1, x2, y2, x3, y3);
+    }
+  }
+}
