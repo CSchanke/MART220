@@ -8,10 +8,10 @@ var colorOptions = ["yellow","blue","red","pink"];
 
 function preload()
 {
-  burger = loadImage(images/'burger.png');
-  owl = loadImage(images/'owl.png');
-  sushi = loadImage(images/'sushi.png');
-  newFont = loadFont('fonts/Long_Shot.ttf');
+  var burger = loadImage('images/burger.png');
+  var owl = loadImage('images/owl.png');
+  var sushi = loadImage('images/sushi.png');
+  var newFont = loadFont('fonts/Long_Shot.ttf');
 }
 function setup() {
   createCanvas(400, 400);
@@ -22,7 +22,7 @@ function draw() {
   //Drawing a burger
   //Signing my name to this lovely artwork
   fill("black");
-  //textFont(newFont);
+  textFont(loadFont('fonts/Long_Shot.ttf'));
   text("Chase Schanke",250,390);
   //Give it a title
   text("Dancing Hamburger",25,25);
