@@ -1,0 +1,6 @@
+I generated all three images using ChatGPT. I originally only generated the sushi, but then I realized it would be easier to ask ChatGPT for images of a specific size and style
+rather than hunt for pictures I wanted and then resize them in paint. As for the images themselves, I'm very satisfied. Unlike that first burger image, they all seem just fine.
+In fact, ChatGPT draws a better cartoon owl than I ever could, and a lot faster.
+
+As a sidenote, I finally got Visual Studio working, so hopefully these assignments will be easier from here on out. Until now, I've been writing them in notepad or the
+p5.js web editor and then copying everything over to text files to upload to GitHub, which was a pain.
