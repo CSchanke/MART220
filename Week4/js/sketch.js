@@ -8,7 +8,6 @@ var colorOptions = ["yellow","blue","red","pink"];
 var newFont;
 var owl;
 var burger;
-var sushi;
 var owlX = 450;
 var timer = 0;
 var owlDirection = 0;
@@ -17,7 +16,6 @@ function preload()
 {
   burger = loadImage('images/burger.png');
   owl = loadImage('images/owl.png');
-  sushi = loadImage('images/sushi.png');
   newFont = loadFont('fonts/Long_Shot.ttf');
 }
 function setup() {
