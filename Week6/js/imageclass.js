@@ -20,14 +20,4 @@ class imageclass{
     {
         return this.y;
     }
-    moveRight()
-    {
-        var x=this.getX();
-        x+=20;
-        return x;
-    }
-    updateLocation(x)
-    {
-        this.x = x;
-    }
 }

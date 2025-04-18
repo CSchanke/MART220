@@ -1,6 +1,7 @@
 var timer = 0;
 var dino;
-var timerAnimation=0;
+var timerAnimationIdle=0;
+var timerAnimationRun=0;
 var timerRun=0;
 var objIdle=[];
 var objRun=[];
@@ -8,7 +9,8 @@ var animRun = [];
 var animIdle =[];
 var counter =0;
 var counter2=0;
-
+var counter3=0;
+var bufferX=0;
 
 function preload()
 {
@@ -21,6 +23,15 @@ function preload()
   {
     animIdle[counter]=objIdle[counter].getImage();
   }
+  for(var counter = 0;counter<=7;counter++){
+    counter2 = counter+1;
+    dino = new imageclass('/assets/dino/run/Run ('+counter2+').png',0,0);
+    objRun[counter]=dino;
+  }
+  for(counter=0;counter<objIdle.length;counter++)
+    {
+      animRun[counter]=objRun[counter].getImage();
+    }
 }
 
 function setup() {
@@ -34,16 +45,45 @@ function draw() {
   //timer function as a simple debug so I know if it has frozen
   text("Timer: " + timer, 20,40);
   timer++;
-  image(animIdle[timerAnimation],objIdle[timerAnimation].getX(),objIdle[timerAnimation].getY());
+  if(keyIsPressed)
+    {
+        if(key == "d")
+        {
+            bufferX=objRun[timerAnimationRun].moveRight();
+            image(animRun[timerAnimationRun], bufferX, objRun[timerAnimationRun].getY());
+            objRun[timerAnimationRun].updateLocation(bufferX);
+            counter3++;
+            if(counter3 > 3)
+            {
+                incrementRunIndex();
+                counter3 = 0;
+            }   
+        }
+    }
+  else{
+    if(objIdle[timerAnimationIdle].getX()!=objRun[timerAnimationRun].getX())
+    {
+      objIdle[timerAnimationIdle].updateLocation(objRun[timerAnimationRun].getX());
+    }
+    image(animIdle[timerAnimationIdle],objIdle[timerAnimationIdle].getX(),objIdle[timerAnimationIdle].getY());
+  }
+  
 }
 function incrementIndex()
 {
      // increment the index
-     timerAnimation += 1;
+     timerAnimationIdle += 1;
 
      // if we reach the end of the array, start over
-     if (timerAnimation >= animIdle.length) {
-         timerAnimation = 0;
+     if (timerAnimationIdle >= animIdle.length) {
+         timerAnimationIdle = 0;
+     }
+}
+function incrementRunIndex()
+{
+  timerAnimationRun += 1;
+     if (timerAnimationRun >= animRun.length) {
+      timerAnimationRun = 0;
      }
 }
 
