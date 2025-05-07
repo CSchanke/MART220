@@ -1,0 +1,8 @@
+assets/dino/idle/Idle (1).png
+assets/dino/idle/Idle (2).png
+assets/dino/idle/Idle (3).png
+assets/dino/idle/Idle (4).png
+assets/dino/idle/Idle (5).png
+assets/dino/idle/Idle (6).png
+assets/dino/idle/Idle (7).png
+assets/dino/idle/Idle (8).png

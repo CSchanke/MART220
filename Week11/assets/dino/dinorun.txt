@@ -1,0 +1,8 @@
+assets/dino/run/Run (1).png
+assets/dino/run/Run (2).png
+assets/dino/run/Run (3).png
+assets/dino/run/Run (4).png
+assets/dino/run/Run (5).png
+assets/dino/run/Run (6).png
+assets/dino/run/Run (7).png
+assets/dino/run/Run (8).png

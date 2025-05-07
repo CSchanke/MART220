@@ -25,6 +25,7 @@ var block1;
 var block2;
 var block3;
 
+
 //IMPORTANT: Working on a custom set of assests, used this version as a test-bed, so the dino changes between two completely different images
 
 function preload()
