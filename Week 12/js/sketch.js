@@ -6,11 +6,13 @@ var shape5;
 var color;
 var img;
 var img2;
+var img3;
 
 function preload()
 {
     img = loadImage("images/leaf-texture.jpg");
     img2 = loadImage("images/stone-texture.jpg");
+    img3 = loadImage('images/earth-texture.jpg');
 }
 
 function setup()
@@ -38,4 +40,10 @@ function draw()
     shape4.draw();
     texture(img);
     shape5.draw();
+
+    push();
+    noStroke();
+    texture(img3);
+    sphere(100);
+    pop();
 }
